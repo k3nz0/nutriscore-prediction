@@ -8,7 +8,14 @@
 ## Submission
 
 Before submitting make sure to test your model and check that everything works fine. 
-In order to do that use ramp_test_submission command.
+In order to do that you can run : 
+
+`ramp_test_submission --submission starting_kit` 
+
+or for a quick test : 
+
+`ramp_test_submission --submission starting_kit --quick-test`
+
 
 Notice that this unit test run in the folder submissions/starting_kit.
 
