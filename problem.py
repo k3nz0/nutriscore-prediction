@@ -37,8 +37,8 @@ class NSG_error(BaseScoreType):
 
         loss = np.mean(
         	2 ** (1.5)
-        	* np.maximum(0, (y_true - y_pred)
-        	* np.sqrt(np.maximum(0, (y_true - y_pred))))
+        	* np.maximum(0, (y_true - y_pred))
+        	* np.sqrt(np.maximum(0, (y_true - y_pred)))
         	+ 
         	2 ** 2 
         	* np.maximum(0, (y_pred - y_true) ** 2)
