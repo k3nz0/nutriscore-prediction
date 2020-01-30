@@ -35,8 +35,15 @@ class NSG_error(BaseScoreType):
         if isinstance(y_true, pd.Series):
             y_true = y_true.values
 
-        loss = np.mean(2*np.maximum(0, (y_true - y_pred)*np.sqrt(np.maximum(0, (y_true - y_pred)))) + 2*np.maximum(0, (y_pred - y_true)**2))
-
+        loss = np.mean(
+        	2 ** (1.5)
+        	* np.maximum(0, (y_true - y_pred)
+        	* np.sqrt(np.maximum(0, (y_true - y_pred))))
+        	+ 
+        	2 ** 2 
+        	* np.maximum(0, (y_pred - y_true) ** 2)
+        )
+        
         return loss
 
 score_types = [
