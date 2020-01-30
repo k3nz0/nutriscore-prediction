@@ -7,7 +7,7 @@ import rampwf as rw
 problem_title = 'Nutriscore prediction'
 
 def _read_data(path, f_name):
-    data = pd.read_csv(os.path.join(path, f_name), sep='|', compression='zip')
+    data = pd.read_csv(os.path.join(path, f_name), sep=',', compression='zip')
     y_array = data['nutriscore_grade'].values
     X_df = data.drop(['nutriscore_grade'], axis=1)
     return X_df, y_array
