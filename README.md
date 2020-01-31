@@ -1,8 +1,8 @@
 # Nutriscore Grade Prediction
 
-<div style="text-align: center">
-	<img width="100px" height="100px" src="https://github.com/k3nz0/nutriscore-prediction/raw/06c4cc51a7a024e36adc4ac3a8886260aced771f/resources/nutriscore.jpg" />
-</div>
+<p align="center">
+	<img width="200px" height="150px" src="https://github.com/k3nz0/nutriscore-prediction/raw/06c4cc51a7a024e36adc4ac3a8886260aced771f/resources/nutriscore.jpg" />
+</p>
 
 ## Introduction
 
@@ -23,9 +23,9 @@ The data comes exclusively from the Open Food Facts database, accessible on http
 There are only five possible outputs (A, B, C, D and E) and the classes are moderately unbalanced. The metric used should penalize depending on the distance between the predicted letter and the true letter. In other words, it should penalize more heavily the prediction of a "E" instead of an "A" than the prediction of a "B" instead of an "A". Moreover, since believing junk food to be health is a greater problem than the opposite, the loss function should reflect that by strongly penalizing overestimates. So, we will convert the letter into an integer between 0 and 4 (E being 0 and A being 4) and then use the following loss function:
 
 
-<div style="text-align: center">
+<p align="center">
 	<img src="https://render.githubusercontent.com/render/math?math=L%28%5Chat%7B%5Ctheta%7D%2C%20%5Ctheta%29%20%3D%20%5Cmathbb%7BE%7D%5Cleft%5B%282f%5E%2B%28%5Chat%7B%5Ctheta%7D-%5Ctheta%20%29%29%5E2%20%2B%20%282f%5E%2B%28%5Ctheta-%5Chat%7B%5Ctheta%7D%29%29%5E%7B3%2F2%7D%5Cright%5D&mode=display" />
-</div>
+</p>
 
 ## Submission
 
