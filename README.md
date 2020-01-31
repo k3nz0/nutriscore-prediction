@@ -1,7 +1,7 @@
 # Nutriscore Grade Prediction
 
 <div style="text-align: center">
-	<img src="https://github.com/k3nz0/nutriscore-prediction/raw/06c4cc51a7a024e36adc4ac3a8886260aced771f/resources/nutriscore.jpg" />
+	<img width="100px" height="100px" src="https://github.com/k3nz0/nutriscore-prediction/raw/06c4cc51a7a024e36adc4ac3a8886260aced771f/resources/nutriscore.jpg" />
 </div>
 
 ## Introduction
