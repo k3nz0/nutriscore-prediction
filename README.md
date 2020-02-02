@@ -19,6 +19,8 @@ The Nutriscore uses a determinist formula using the nutritional value of the pro
 
 The data comes exclusively from the Open Food Facts database, accessible on http://openfoodfacts.org/. The database is available under the Open Database License and is managed by the non-profit organization Open Food Facts. Most of the data is provided by invidual contributors that wish to help the project.
 
+We have only selected the features we were interested in for this challenge. Furthermore, some product data are dirty and have incomplete information.
+
 ## Metric
 There are only five possible outputs (A, B, C, D and E) and the classes are moderately unbalanced. The metric used should penalize depending on the distance between the predicted letter and the true letter. In other words, it should penalize more heavily the prediction of a "E" instead of an "A" than the prediction of a "B" instead of an "A". Moreover, since believing junk food to be health is a greater problem than the opposite, the loss function should reflect that by strongly penalizing overestimates. So, we will convert the letter into an integer between 0 and 4 (E being 0 and A being 4) and then use the following loss function:
 
